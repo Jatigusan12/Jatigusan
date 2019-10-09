@@ -14,7 +14,7 @@ function TurnedOn(){
 
 function TurnedOff(){
   var d = new Date();
-  client.publish("adrian/device/status", "Turned On:"+ d);
+  client.publish("adrian/device/status", "Turned Off:"+ d);
   var status = "The Device Is Currently Turned Off"
   document.getElementById('Message').innerHTML = status.toString();
   document.getElementById("Off").disabled = true;
